@@ -13,14 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Ensure tag is from master branch
-        run: |
-          BRANCH=$(git branch -r --contains "$GITHUB_SHA" | grep origin/master || true)
-          if [ -z "$BRANCH" ]; then
-            echo "Tag not from master branch. Skipping..."
-            exit 1
-          fi
-
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
