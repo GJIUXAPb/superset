@@ -1,3 +1,4 @@
+```YAML
 version: '3.3'
 services:
   superset:
@@ -14,3 +15,4 @@ services:
       ENV_PG_HOST: postgres
       ENV_PG_PORT: 5432
       TZ: Europe/Moscow
+```
