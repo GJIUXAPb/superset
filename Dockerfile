@@ -1,5 +1,5 @@
 # Базовый образ Superset
-FROM apache/superset:4.1.2
+FROM apache/superset:4.1.2-py311
 
 # Устанавливаем зависимости для PostgreSQL
 USER root
